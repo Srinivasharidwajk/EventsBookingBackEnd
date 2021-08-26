@@ -1,0 +1,81 @@
+Routing : userRouter , EventsRouter
+
+1. Register a User
+ USAGE  : Register a User
+ URL    : http://127.0.0.1:5000/user/register
+ Method : POST
+ Fields : name,email,password
+ Access  : PUBLIC
+
+ 2. Login a User
+ USAGE  : Login a User
+ URL    : http://127.0.0.1:5000/user/login
+ Method : POST
+ Fields : email,password
+ Access  : PUBLIC
+
+ 3.USAGE  : Login a User
+ URL    : http://127.0.0.1:5000/user/login
+ Method : POST
+ Fields : email,password
+ Access  : PRIVATE
+
+ 4.USAGE  : Upload an Event
+ URL    : http://127.0.0.1:5000/event/register
+ Method : POST
+ Fields : name , image , price , date , info , type
+ Access : PRIVATE
+
+  5.USAGE  : Get all Free Events
+ URL    : http://127.0.0.1:5000/event/free
+ Method : GET
+ Fields : no-fields
+ Access : PUBLIC
+
+   6.USAGE  : Get all PRO Events
+ URL    : http://127.0.0.1:5000/event/pro
+ Method : GET
+ Fields : no-fields
+ Access : PUBLIC
+
+    7.USAGE  : Get a Single Event
+ URL    : http://127.0.0.1:5000/event/:eventId
+ Method : GET
+ Fields : no-fields
+ Access : PUBLIC
+
+
+ Database Setup
+ --------------
+ Database   : events-Booking
+ Tables     : User , event
+ user Table : id ,name , email , Password , avatar , isAdmin , createdAt , updateAt
+ events Table : id , name , image , price , date , info , type , createdAt , updateAt
+
+ Server Side Modules
+ -------------------
+ express
+ cors
+ dotenv
+ gravatar
+ bcryptjs
+ jsonwebtoken
+ express-validator
+ mongoose
+
+ @types/express
+ @types/cors
+ @types/dotenv
+ @types/gravatar
+ @types/bcryptjs
+ @types/jsonwebtoken
+ @types/express-validator
+ @types/mongoose
+ @types/node
+
+
+
+npm install express cors dotenv gravatar bcryptjs jsonwebtoken express-validator mongoose @types/express @types/cors @types/dotenv @types/gravatar @types/bcryptjs @types/jsonwebtoken @types/express-validator @types/mongoose @types/node
+
+
+npm install -g nodemon ts-node
