@@ -7,7 +7,7 @@ import userRouter from "./router/userRouter";
 import eventsRouter from "./router/eventsRouter";
 const app:express.Application = express();
 
-//configure cors
+//configure ==cors
 app.use(cors());
 
 // configure dotEnv
